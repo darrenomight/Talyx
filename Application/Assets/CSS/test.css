@@ -1,0 +1,51 @@
+body {
+    font-family: sans-serif;
+    background-color: #e8e8e8;
+}
+
+.logo {
+    width: 120px;
+}
+
+section {
+    font-size: 32px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.navbar {
+    transition: top 0.5s;
+}
+
+.nav-link:hover {
+    color: #000 !important;
+}
+
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    color: #555;
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::before {
+    width: 100%;
+}
+
+.nav-link:hover {
+    color: #000; /* Optional: Change text color on hover */
+}
